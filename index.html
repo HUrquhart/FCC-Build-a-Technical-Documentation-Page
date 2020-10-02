@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Technical Documentation Page</title>
+		<style>
+				*{
+						box-sizing: border-box;
+				}
+				html, body{
+						margin: 0;
+						padding: 0;
+				}
+				img, iframe{max-width: 100%;}
+				.container{
+						width: 100%;
+						max-width: 1030px;
+						margin: 0 auto;
+						padding: 0 15px;
+				}
+				code{
+						display: block;
+						min-height: 44px;
+						font-family: monospace;
+						font-size: 16px;
+						background-color: antiquewhite;
+						color: #333;
+						border: 2px solid #999;
+						border-radius: 10px;
+						padding: 10px;
+						mso-line-numbers-count-by: 1;
+				}
+
+				@media screen and (min-width: 501px ){
+						nav#navbar{
+								display: block;
+								width: 200px;
+                position: relative;
+								top: 0;
+						}
+            nav#navbar a{
+                display: block;
+            }
+            .container{
+		            display: grid;
+		            grid-template-columns: 200px 1fr;
+		            width: 100%;
+		            max-width: 1030px;
+		            padding: 0 15px;
+            }
+				}
+		</style>
+	</head>
+	<body>
+		<main id="main-doc">
+			<div class="container">
+				<nav id="navbar">
+					<header id="header">Lexan Elements</header>
+					<a class="nav-link" href="#Working_with_container_elements">Working with container elements</a>
+					<a class="nav-link" href="#Buttons">Buttons</a>
+					<a class="nav-link" href="#Spans">Spans</a>
+					<a class="nav-link" href="#Block_Quotes">Block Quotes</a>
+					<a class="nav-link" href="#Grids">Grids</a>
+				</nav>
+
+				<div class="content">
+					<section class="main-section" id="Working_with_container_elements">
+						<header>
+							<h2>Working with container elements</h2>
+						</header>
+						<code>&lt;div class="container"&gt;</code>
+						<p>Containers help items stay aligned on the site and help keep the content in the center of the screen when the screen size is larger then the container width</p>
+						<p>Containers use maxwidth and margin combined with a small amount of padding</p>
+						<ul>
+							<li>Add containers as a class</li>
+							<li>Containers are better suited a children of other elements so that they may provide backgrounds when needed</li>
+						</ul>
+					</section>
+					<section class="main-section" id="Buttons">
+						<header>
+							<h2>Buttons</h2>
+						</header>
+						<code>&lt;a class="btn primary"&gt;Button text&lt;/a"&gt;</code>
+						<p>When using buttons you can apply a combination of 2 clases btn and any status helper class to style the element</p>
+						<p>You customise the variables in the SCSS partials to change the colour scheme see below for a list of variables used</p>
+						<ul>
+							<li>$primary-color</li>
+							<li>$secondary-color</li>
+							<li>$tertiary-color</li>
+							<li>$color-4</li>
+							<li>$color-5</li>
+						</ul>
+					</section>
+					<section class="main-section" id="Spans">
+						<header>
+							<h2>Spans</h2>
+						</header>
+						<code>&lt;div class="container"&gt;</code>
+						<p>Containers help items stay aligned on the site and help keep the content in the center of the screen when the screen size is larger then the container width</p>
+						<p>Containers use maxwidth and margin combined with a small amount of padding</p>
+					</section>
+					<section class="main-section" id="Block_Quotes">
+						<header>
+							<h2>Block Quotes</h2>
+						</header>
+						<code>&lt;div class="container"&gt;</code>
+						<p>Containers help items stay aligned on the site and help keep the content in the center of the screen when the screen size is larger then the container width</p>
+						<p>Containers use maxwidth and margin combined with a small amount of padding</p>
+					</section>
+					<section class="main-section" id="Grids">
+						<header>
+							<h2>Grids</h2>
+						</header>
+						<code>&lt;div class="container"&gt;</code>
+						<p>Containers help items stay aligned on the site and help keep the content in the center of the screen when the screen size is larger then the container width</p>
+						<p>Containers use maxwidth and margin combined with a small amount of padding</p>
+						<ul>
+							<li>Add containers as a class</li>
+							<li></li>
+							<li></li>
+						</ul>
+					</section>
+				</div>
+
+			</div>
+		</main>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	</body>
+</html>
